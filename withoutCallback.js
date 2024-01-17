@@ -9,3 +9,17 @@ const newCookie = {name:"Biscotti Cookies"};
   // use setTimeout() -- use 2000 units for time parameter
 
 // Progression 4: calling functions
+
+function getCookies() {
+  return cookies.forEach(e => console.log(e))
+}
+
+function createCookies(cookie) {
+  
+  setTimeout(() => {
+    cookies.push(cookie)
+  },2000)
+}
+
+getCookies()
+createCookies(newCookie)
